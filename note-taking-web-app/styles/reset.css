@@ -39,14 +39,20 @@ body {
 }
 
 .head h1 {
-     font-size: 24px;
-  color: #0E121B;
+  font-size: 24px;
+  color: #0e121b;
 }
 
-
 .head p {
-     font-size: 14px;
-  color: #0E121B;
+  font-size: 14px;
+  color: #0e121b;
+}
+
+.cnp {
+  display: flex;
+  gap: 10px;
+  width: 444px;
+  padding: 5px;
 }
 
 form {
@@ -54,13 +60,57 @@ form {
   display: flex;
   flex-direction: column;
   gap: 16px;
-} 
-
-.cnp {
-    display: flex;
-    gap: 10px;
-    width: 444px;
 }
+
+form .password {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+form .password .password-label-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .password .password-label-div label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0e121b;
+}
+
+form .password .password-label-div a {
+  font-size: 12px;
+  color: #525866;
+}
+
+form .password .password-input-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e0e4ea;
+  border-radius: 8px;
+  padding-right: 12px;
+}
+
+form .password .password-input-div input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 12px;
+}
+
+form .password .password-input-div input:focus {
+  outline: none;
+}
+
+form .password .password-input-div svg {
+  cursor: pointer;
+}
+
+/* 
 
 label {
     width: 444px;
@@ -79,12 +129,12 @@ input {
     padding-top: 12px 16px;
     gap: 8px;
      border: 1px solid #e0e4ea;
-}
+} */
 
 form button {
-  padding: 12px 16px ;
-  background-color: #335CFF;
-  color: #FFFFFF;
+  padding: 12px 16px;
+  background-color: #335cff;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   font-size: 16px;
